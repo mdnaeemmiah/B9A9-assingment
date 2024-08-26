@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
-    const { createUser, success,setSuccess, setShowPassword, showPassword ,setRegisterError,registerError} = useContext(AuthContext);
+    const {githubLogin,googleLogin, createUser, success,setSuccess, setShowPassword, showPassword ,setRegisterError,registerError} = useContext(AuthContext);
 
     const handleLogin = e => {
         e.preventDefault();
@@ -39,8 +39,37 @@ const Register = () => {
                 setRegisterError(error.message)
             })
     }
+
+   const handleGoogle =()=>{
+    googleLogin()
+    .then(result => {
+        console.log(result.user);
+        setSuccess('successfully')
+
+    })
+    .catch(error => {
+        console.log(error);
+        setRegisterError(error.message)
+    })
+   }
+
+   const handleGithub =()=>{
+    githubLogin()
+    .then(result => {
+        console.log(result.user);
+        setSuccess('successfully')
+
+    })
+    .catch(error => {
+        console.log(error);
+        setRegisterError(error.message)
+    })
+   }
+
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div>
+           
+            <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col ">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Register now!</h1>
@@ -103,6 +132,11 @@ const Register = () => {
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
                         </div>
+                        <div className="">
+                            <button onClick={handleGoogle} className="btn bg-violet-600 text-white">Google</button>
+                            <button  onClick={handleGithub} className="btn bg-violet-600 text-white">GitHub</button>
+                            <button  className="btn bg-violet-600 text-white">Facebook</button>
+                        </div>
                     </form>
                     {
                         registerError && <p className="text-red-700 text-center font-bold">{registerError}</p>
@@ -113,6 +147,7 @@ const Register = () => {
                     <p className="p-2 mb-4">Your have an account!Please <Link to='/login' className="text-blue-700 font-bold">Login</Link></p>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
