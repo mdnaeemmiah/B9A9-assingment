@@ -1,0 +1,58 @@
+[
+    {
+      "id": "001",
+      "title": "Sunset Park",
+      "name": "Central Park",
+      "description": "A large public park in the center of the city, known for its beautiful sunsets and recreational areas.",
+      "area": "843 acres",
+      "location": "New York, NY, USA",
+      "image": "https://i.ibb.co/vm7LQ9T/download-1.jpg"
+    },
+    {
+      "id": "002",
+      "title": "Historic Square",
+      "name": "Trafalgar Square",
+      "description": "A historic square in London, famous for its monuments, fountains, and cultural significance.",
+      "area": "4 acres",
+      "location":  "London, England, UK",
+      "image": "https://i.ibb.co/bdC3JKP/download-2.jpg"
+    },
+    {
+      "id": "003",
+      "title": "Iconic Bridge",
+      "name": "Golden Gate Bridge",
+      "description": "A suspension bridge spanning the Golden Gate, connecting San Francisco and Marin County.",
+      "area": "1.7 miles",
+      "location":"San Francisco, CA, USA",
+      "image": "https://i.ibb.co/s3K52Y8/download-3.jpg"
+    },
+    {
+      "id": "004",
+      "title": "Ancient Wonder",
+      "name": "Pyramids of Giza",
+      "description": "The ancient pyramids of Egypt, one of the Seven Wonders of the Ancient World.",
+      "area": "13 square kilometers",
+      "location": "Giza, Egypt",
+      "image": "https://i.ibb.co/rwn3970/download-4.jpg"
+    },
+    {
+      "id": "004",
+      "title": "Ancient Wonder",
+      "name": "Pyramids of Giza",
+      "description": "The ancient pyramids of Egypt, one of the Seven Wonders of the Ancient World.",
+      "area": "13 square kilometers",
+      "location":"Giza, Egypt",
+      "image": "https://i.ibb.co/jf4PkvC/download.jpg"
+    },
+    {
+      "id": "004",
+      "title": "Ancient Wonder",
+      "name": "Pyramids of Giza",
+      "description": "The ancient pyramids of Egypt, one of the Seven Wonders of the Ancient World.",
+      "area": "13 square kilometers",
+      "location":"Giza, Egypt",
+      "image": "https://i.ibb.co/vm7LQ9T/download-1.jpg"
+    }
+]
+       
+  
