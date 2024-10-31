@@ -42,7 +42,7 @@ const Nav = () => {
                 {
                     user ? <>
                         {user.email}
-                        <a onClick={handleLogOut} className="btn bg-red-700">Log Out</a>
+                        <a onClick={handleLogOut} className="btn bg-orange-400">Log Out</a>
                     </> : <Link to='/login' className="btn bg-green-600">Login</Link>
                 }
 

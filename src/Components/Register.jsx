@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
-    const {githubLogin,googleLogin, createUser, success,setSuccess, setShowPassword, showPassword ,setRegisterError,registerError} = useContext(AuthContext);
+     const {githubLogin,googleLogin, createUser, success,setSuccess, setShowPassword, showPassword ,setRegisterError,registerError} = useContext(AuthContext);
+    const navigate =useNavigate()
 
     const handleLogin = e => {
         e.preventDefault();
@@ -32,6 +33,7 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('successfully')
+                navigate('/')
 
             })
             .catch(error => {
