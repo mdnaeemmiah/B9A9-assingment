@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Carousel from "./Banner";
 
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
              <div className="text-center text-2xl font-bold mt-10">
                 <h2 >Welcome Our Site <Link to='/details'><button  className="btn btn-wide text-xl font-bold bg-green-600" >More Details</button></Link></h2>
             </div>
-            <div className="carousel ">
+            {/* <div className="carousel ">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src="https://i.ibb.co/WcKz9Bf/pexels-pixabay-459728.jpg"
@@ -37,7 +38,8 @@ const Home = () => {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Carousel></Carousel>
            
         </div>
 

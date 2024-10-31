@@ -18,11 +18,13 @@ import Order from './Components/Order.jsx';
 import Dashboard from './Components/Dashboard.jsx';
 import Details from './Components/Details.jsx';
 import Detail from './Components/Detail.jsx';
+import ErrorPage from './Components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
